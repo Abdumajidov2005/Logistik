@@ -1,6 +1,32 @@
-.links li{
-    cursor: pointer;
+.links li {
+  cursor: pointer;
 }
-.hero{
-    background-color: #F9F9F9;
+.hero {
+  background-color: #f9f9f9;
+}
+
+.hero_info {
+  width: 650px;
+  line-height: 100px;
+}
+
+.hero_img {
+  width: 550px;
+  height: 450px;
+}
+
+.hero_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 980px) {
+  .hero_info {
+    width: 100%;
+  }
+  .hero_img {
+    width: 100%;
+    height: 300px;
+  }
 }

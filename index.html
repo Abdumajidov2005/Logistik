@@ -11,6 +11,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -27,7 +34,7 @@
             />
           </div>
           <ul
-            class="links text-dark d-flex align-items-center gap-5 fw-medium"
+            class="links text-dark d-none d-lg-flex align-items-center gap-5 fw-medium"
             style="list-style: none"
             ;
           >
@@ -36,36 +43,49 @@
             <li>Tere benefits</li>
             <button type="button" class="btn btn-success">Help Center</button>
           </ul>
+          <div class="d-block d-lg-none">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
         </div>
       </nav>
       <div class="hero">
         <div
-          class="container d-flex align-items-center justify-content-between"
+          class="container text-center text-lg-start d-flex align-items-end justify-content-between flex-column-reverse flex-lg-row flex-wrap gap-4"
           style="padding: 130px 0px"
         >
-          <div class="text-dark" style="width: 550px; line-height: 100px">
+          <div class="hero_info text-dark">
             <h1 class="fs-1 fw-bold">
               DOWNLOAD APP,<br />
               SAVE MONEY, MAKE <br />
               FRIENDS!
             </h1>
             <p
-              class="text-secondary fs-6 fw-medium p-2"
-              style="line-height: 20px; width: 370px"
+              class="text-secondary fs-6 fw-medium py-2"
+              style="line-height: 20px"
             >
               Its simple and its free. Play your part in reducing Carbon
               Footprint and help Mother Nature to sustain its beauty. So what
               are you waiting for ? Lets ride together
             </p>
-            <button type="button" class="btn btn-dark fw-medium">
-              <img src="./imgs/dowload1.svg" alt="" /> DOWNLOAD
-            </button>
-            <button type="button" class="btn btn-dark fw-medium">
-              <img src="./imgs/dowload2.svg" alt="" /> DOWNLOAD
-            </button>
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start flex-lg-nowrap gap-4"
+            >
+              <button
+                type="button"
+                class="btn btn-dark fw-medium d-flex gap-3 align-items-center"
+              >
+                <img src="./imgs/dowload1.svg" alt="" /> DOWNLOAD
+              </button>
+              <button
+                type="button"
+                class="btn btn-dark fw-medium d-flex gap-3 align-items-center"
+              >
+                <img src="./imgs/dowload2.svg" alt="" /> DOWNLOAD
+              </button>
+            </div>
           </div>
           <div class="hero_img">
-            <img src="./imgs/hero-img'.png" width="350px" alt="" />
+            <img src="./imgs/hero-img'.png" alt="" />
           </div>
         </div>
       </div>
@@ -73,26 +93,29 @@
     <main>
       <section>
         <div
-          class="container bg-success p-5 d-flex align-items-center justify-content-between rounded-4 my-5"
+          class="container bg-success p-5 d-flex align-items-center justify-content-between flex-column flex-lg-row rounded-4 my-5"
         >
-          <h1 class="fs-4 w-25 text-light">
+          <h1 class="fs-4 w-lg-25 w-100 text-light">
             Let’s go. Get a link to download the app.
           </h1>
-          <div class="w-50 d-flex align-items-center justify-content-between">
+          <div
+            class="w-100 d-flex align-items-center align-items-lg-start justify-content-lg-between flex-lg-row flex-column gap-2 justify-content-center"
+          >
             <input
-              class="rounded-3 border-0 p-3 fs-5 text-black"
+              class="rounded-3 border-0 p-2 p-lg-3 fs-5 text-black w-50"
               style="outline: none; width: 70%"
               type="text"
               placeholder="Enter mobile phone number"
             />
-            <button class="btn btn-dark p-3 border-0 fs-5">
+            <button class="btn btn-dark p-2 p-lg-3 border-0 fs-5 w-50">
               APPLY TO DRIVE
             </button>
           </div>
         </div>
       </section>
+
       <section
-        class="d-flex align-items-center justify-content-center text-center py-5"
+        class="d-flex align-items-center justify-content-center flex-column-reverse text-center py-5"
       >
         <div class="container">
           <h2 class="fw-bold">
@@ -104,7 +127,7 @@
             may start driving.
           </p>
           <div class="row align-items-center text-center">
-            <div class="col-lg-3 py-5">
+            <div class="col-lg-3 py-3 py-lg-5">
               <div class="step mb-5">
                 <img class="py-1" src="./imgs/number1.png" alt="" />
                 <h6 class="fw-medium">REQUEST A RIDE</h6>
@@ -123,9 +146,13 @@
               </div>
             </div>
 
-            <div class="col-lg-6 position-relative">
+            <div
+              class="col-lg-6 position-relative w-50"
+              style="height: 500px; margin: 20px auto"
+            >
               <img
-                class="py-3"
+                class="py-3 w-100 h-100"
+                style="object-fit: contain"
                 src="./imgs/phone.png"
                 class="phone-img"
                 alt="Phone"
@@ -151,6 +178,7 @@
           </div>
         </div>
       </section>
+
       <section class="py-5 bg-light">
         <div class="container">
           <h2 class="text-center mb-5 fw-bold">
@@ -205,10 +233,15 @@
     </main>
     <footer>
       <div
-        class="container d-flex align-items-center justify-content-between py-5"
+        class="container d-flex align-items-center justify-content-between flex-lg-row flex-column gap-3 py-5"
       >
-        <div style="width: 120px; height: 30px">
-          <img style="width: 100%; height: 100%" src="./imgs/logo.png" alt="" />
+        <div class="w-25" style="height: 30px">
+          <img
+            class="w-100 h-100"
+            style="object-fit: contain"
+            src="./imgs/logo.png"
+            alt=""
+          />
         </div>
         <ul class="fs-6 fw-lighter" style="list-style: none">
           <li class="fs-5 text-dark fw-bolder">Be Our Friend</li>
@@ -216,17 +249,17 @@
           <li>support@foodyar.co,id</li>
           <li>021 - 1111 - 2222</li>
         </ul>
-         <ul class="fs-6 fw-lighter" style="list-style: none">
+        <ul class="fs-6 fw-lighter d-none d-lg-block" style="list-style: none">
           <li class="fs-5 text-dark fw-bolder">Be Our Friend</li>
           <li>3, Season Park, Jakarta</li>
           <li>support@foodyar.co,id</li>
           <li>021 - 1111 - 2222</li>
         </ul>
         <button type="button" class="btn btn-dark fw-medium">
-          <img src="./imgs/dowload1.svg" alt="" /> DOWNLOAD
+          <i class="fa-brands fa-google-play"></i> DOWNLOAD
         </button>
         <button type="button" class="btn btn-dark fw-medium">
-          <img src="./imgs/dowload2.svg" alt="" /> DOWNLOAD
+          <i class="fa-brands fa-app-store"></i> DOWNLOAD
         </button>
       </div>
     </footer>
